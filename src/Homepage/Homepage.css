@@ -1,0 +1,145 @@
+.container {
+    background-color: #071C21;
+    box-sizing: border-box;
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.container .grid-content,
+.container-about .grid-about {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 50% 50%;
+    /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+    align-items: start;
+}
+
+.grid-content .content {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.grid-content .t1 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    /* identical to box height */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.grid-content .t2 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60.322px;
+    color: white;
+}
+
+.grid-content hr {
+    border: 4px solid #69FBA4;
+}
+
+.grid-content .desc {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.grid-content .button-wrap {
+    margin-top: 15px;
+}
+
+.grid-content .button-wrap button {
+    background: #69FBA4;
+    border-radius: 10px;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #071C21;
+    cursor: pointer;
+    transition: 0.3s;
+    border-color: #69FBA4;
+}
+
+.grid-content .button-wrap button:hover {
+    background-color: #071C21;
+    color: #69FBA4;
+    border-color: #69FBA4;
+}
+
+.grid-content .img-wrap {
+    width: 100%;
+    height: 80%;
+}
+
+.grid-content .img-wrap img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 430px;
+    height: 542px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+
+/* About */
+
+.container-about {
+    padding: 0 50px;
+}
+
+.container-about .grid-about .aboutContent {
+    height: 50%;
+    margin: auto 0;
+}
+
+.titleAbout {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38.642px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.desc-about {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.img-wrap-2 {
+    padding: 50px;
+}
+
+.img-wrap-2 .wrap {
+    background-color: #071C21;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-wrap-2 .wrap .me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.img-wrap-2 .wrap .me:hover {
+    transform: translate(-10px, -10px);
+}
