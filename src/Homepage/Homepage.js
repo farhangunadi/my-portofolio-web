@@ -6,6 +6,7 @@ import square from "./../Assets/Images/square.png";
 import design from "./../Assets/Images/design.png";
 import camera from "./../Assets/Images/camera.png";
 import code from "./../Assets/Images/code.png";
+import imgMe3 from "./../Assets/Images/me3.png";
 import { Link } from "react-router-dom";
 
 function Homepage() {
@@ -140,6 +141,32 @@ function Homepage() {
               </div>
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="get-in-touch">
+        <h1 className="title">GET IN TOUCH</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi a
+          egestas quam eros.Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Facilisi a egestas quam eros.
+        </p>
+        <div className="grid-get-in-touch">
+          <div className="img-wrap-getInTouch">
+            <img src={imgMe3} alt="" />
+          </div>
+          <form action="">
+            <input placeholder="Title" type="text" className="title-input" />
+            <textarea
+              placeholder="Message..."
+              name="message"
+              id=""
+              cols="30"
+              rows="8"
+            ></textarea>
+            <div className="btn-message-wrap">
+              <button className="btn-message">Send</button>
+            </div>
+          </form>
         </div>
       </div>
     </>
