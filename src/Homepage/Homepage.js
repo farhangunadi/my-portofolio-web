@@ -3,6 +3,10 @@ import "./Homepage.css";
 import imgMe from "./../Assets/Images/me.png";
 import imgMe2 from "./../Assets/Images/me2.png";
 import square from "./../Assets/Images/square.png";
+import design from "./../Assets/Images/design.png";
+import camera from "./../Assets/Images/camera.png";
+import code from "./../Assets/Images/code.png";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -47,6 +51,94 @@ function Homepage() {
             <div className="wrap">
               <img src={imgMe2} alt="" className="me" />
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="interest">
+        <h2 className="title-interest">INTERESTS</h2>
+        <div className="grid-interest">
+          <div className="item">
+            <div className="item-icon">
+              <img src={design} alt="" />
+            </div>
+            <h3 className="title-item">DESIGN</h3>
+            <p className="desc-item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+            </p>
+          </div>
+          <div className="item">
+            <div className="item-icon">
+              <img src={code} alt="" />
+            </div>
+            <h3 className="title-item">FRONTEND DEV</h3>
+            <p className="desc-item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+            </p>
+          </div>
+          <div className="item">
+            <div className="item-icon">
+              <img className="camera-icon" src={camera} alt="" />
+            </div>
+            <h3 className="title-item">PHOTOGRAPHY</h3>
+            <p className="desc-item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="project-content">
+        <h1>WHAT I'VE BEEN UP TO</h1>
+        <div className="grid-project">
+          <div className="card-project">
+            <h2 className="title-project">VIDEO PROJECT</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <Link to="/" className="link-btn">
+              <div className="btn-project-wrap">
+                <button className="btn-project">See Project</button>
+              </div>
+            </Link>
+          </div>
+          <div className="card-project">
+            <h2 className="title-project">UI/UX PROJECT</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <Link to="/" className="link-btn">
+              <div className="btn-project-wrap">
+                <button className="btn-project">See Project</button>
+              </div>
+            </Link>
+          </div>
+          <div className="card-project">
+            <h2 className="title-project">APP PROJECT</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <Link to="/" className="link-btn">
+              <div className="btn-project-wrap">
+                <button className="btn-project">See Project</button>
+              </div>{" "}
+            </Link>
+          </div>
+          <div className="card-project">
+            <h2 className="title-project">PHOTOGRAPHY PROJECT</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <Link to="/" className="link-btn">
+              <div className="btn-project-wrap">
+                <button className="btn-project">See Project</button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
