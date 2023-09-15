@@ -1,13 +1,17 @@
 import React from "react";
 import "./Homepage.css";
-import imgMe from "./../Assets/Images/me.png";
-import imgMe2 from "./../Assets/Images/me2.png";
-import square from "./../Assets/Images/square.png";
+import imgMe from "./../Assets/Images/farhan_halfbody_nobg.png";
+import imgMe2 from "./../Assets/Images/potrait_me.jpeg";
 import design from "./../Assets/Images/design.png";
 import camera from "./../Assets/Images/camera.png";
 import code from "./../Assets/Images/code.png";
 import imgMe3 from "./../Assets/Images/me3.png";
 import { Link } from "react-router-dom";
+import { Suspense } from "react";
+import { Canvas, PerspectiveCamera } from "@react-three/fiber";
+import { Environment } from "@react-three/drei";
+import { Model } from "../Homepage/Model";
+import * as THREE from "three";
 
 function Homepage() {
   return (
@@ -15,22 +19,26 @@ function Homepage() {
       <div className="container">
         <div className="grid-content">
           <div className="content">
-            <h3 className="t1">I'm</h3>
+            <h3 className="t1">Hello, I'm</h3>
             <h2 className="t2">Farhan Gunadi</h2>
             <hr />
             <p className="desc">
-              Effective Student committed to learning, developing skills in
-              design also web app developer and team contribution. Self-directed
-              and energetic with superior performance in both autonomous or
-              collaborative environments working independently and collaborating
-              with others on group projects.
+              Fresh graduate computer science student that interest to learning
+              and working in data analyst, UI/UX design, web developer, and
+              product researcher.
             </p>
             <div className="button-wrap">
-              <button className="btn">See my Project</button>
+              <button className="btn">Let's Talk</button>
             </div>
           </div>
           <div className="img-wrap">
             <img src={imgMe} alt="" />
+            {/* <Canvas camera={{ near: 0.5 }}>
+              <Suspense fallback={null}>
+                <Model />
+                <Environment preset="sunset" />
+              </Suspense>
+            </Canvas> */}
           </div>
         </div>
       </div>

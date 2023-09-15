@@ -1,113 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
-    background-color: #071C21;
-    color: #ffffff;
-    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: #f6f7f8;
+  color: #011627;
+  padding: 20px;
 }
 
 .navbar .img-wrapper {
-    width: 200px;
-    height: auto;
-    margin-left: 30px;
-    justify-content: center;
+  width: 200px;
+  height: auto;
+  margin-left: 30px;
+  justify-content: center;
 }
 
 .navbar .img-wrapper img {
-    width: 50px;
-    height: auto;
-    justify-content: center;
+  width: 50px;
+  height: auto;
+  justify-content: center;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    width: 75%;
-    margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+  margin-right: 40px;
 }
 
 .Home,
 .Project,
 .Contact,
 .about {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px;
-    margin: 0 32px;
-    cursor: pointer;
+  text-decoration: none;
+  color: #011627;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 0 32px;
+  cursor: pointer;
 }
 
 .Home :hover,
 .Project :hover,
 .Contact :hover,
 .about :hover {
-    color: #69FBA4;
+  color: #2ec4b6;
 }
 
 .mobile-menu-icon {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 1119px) {
-    .logo {
-        display: flex;
-        position: absolute;
-        top: 15px;
-        left: 10px;
-    }
-    .nav-links {
-        display: none;
-    }
-    .nav-links-mobile {
-        position: absolute;
-        display: block;
-        list-style: none;
-        background-color: #071C21;
-        left: 0;
-        top: 75px;
-        transition: all 0.5s ease-out;
-        width: 100%;
-        z-index: 100;
-    }
-    .Home,
-    .Project,
-    .Contact,
-    .about {
-        color: #ffffff;
-        text-align: center;
-        padding: 32px;
-        width: 100%;
-        transition: all 0.5s ease;
-    }
-    .Home :hover,
-    .Project :hover,
-    .Contact :hover,
-    .about :hover {
-        background-color: #ffffff;
-        color: #071C21;
-    }
-    .mobile-menu-icon {
-        display: block;
-        position: absolute;
-        font-size: 30px;
-        color: #ffffff;
-        background: none;
-        border: none;
-        outline: none;
-        top: 15px;
-        right: 25px;
-    }
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #071c21;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    z-index: 100;
+  }
+  .Home,
+  .Project,
+  .Contact,
+  .about {
+    color: #ffffff;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .Home :hover,
+  .Project :hover,
+  .Contact :hover,
+  .about :hover {
+    background-color: #ffffff;
+    color: #071c21;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    background: none;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
 }
 
-@media screen and (max-width: 780px) {}
+@media screen and (max-width: 780px) {
+}
